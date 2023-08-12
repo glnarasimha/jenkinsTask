@@ -12,7 +12,7 @@ RUN apt update -y \
     && sed -i 's/database_name_here/wordpress/g' /var/www/html/wp-config.php \
     && sed -i 's/username_here/admin/g' /var/www/html/wp-config.php \
     && sed -i 's/password_here/admin123/g' /var/www/html/wp-config.php \
-    && sed -i 's/localhost/database-2.cgqzznwa1v2k.us-east-1.rds.amazonaws.com/g' /var/www/html/wp-config.php
+    && sed -i 's/localhost/database-1.cgqzznwa1v2k.us-east-1.rds.amazonaws.com/g' /var/www/html/wp-config.php
 
 EXPOSE 3306
 EXPOSE 80
